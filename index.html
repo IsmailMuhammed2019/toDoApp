@@ -4,24 +4,33 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="app.css">
     <script src="app.js"></script>
     <title>My To-Do App</title>
 </head>
 <body>
-    <div class="wrapper">
+    <div class="container">
         <div class="inner-wrapper">
             <h1>My Todo List App</h1>
             <h3>These are the Tasks I must complete today</h3>
             <ul>
                 <li>
-                    <span class=>Task Title</span>
-                    <span>Delete</span>
+                    <span class="title">Task Title</span>
+                    <span class="delete">Delete</span>
+                </li>
+                <li>
+                    <span class="title">Task Title</span>
+                    <span class="delete">Delete</span>
+                </li>
+                <li>
+                    <span class="title">Task Title</span>
+                    <span class="delete">Delete</span>
                 </li>
             </ul>
-            <form>
-                <input type="text" id="addtask" >
-                <button>Add Task</button>
+            <form class="form-group myform">
+                <input type="text" id="addtask" class="form-control" >
+                <button class="submitbutton btn btn-success">Add Task</button>
             </form>
         </div>
     </div>
